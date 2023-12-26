@@ -1,13 +1,23 @@
 # Cyclomatic Complexity
 
-## In graph theory
+## The definition of cyclomatic number `V(G)`
 
-`V(G) = e - n + 2`
+`V(G) = e - n + p`
 
 where
 
 - `e`: the number of edges
-- `n`: the number of nodes
+- `n`: the number of vertices
+- `p`: the number of connected components
+
+## McCabe theorem
+
+- V(G) >= 1
+- V(G) is the size of the basis set
+- Inserting or deleting functional statements to G does not affect V(G)
+- G has only one path if and only if V(G) = 1
+- Inserting a new edge in G increases V(G) by unity
+- V(G) depends only on the decision structure of G
 
 ## In a simple program
 
